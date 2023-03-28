@@ -17,25 +17,25 @@ public class UserRegistration {
 
         //uc2
         Pattern pattern1 = Pattern.compile("^[A-Z][a-z]{2,}");
-        Matcher matcher1 = pattern.matcher("Naik");
-        if (matcher.matches())
+        Matcher matcher1 = pattern1.matcher("Naik");
+        if (matcher1.matches())
             System.out.println("valid lastname");
         else
             System.out.println("Invalid lastname");
 
         //uc3
-        Pattern pattern2 = Pattern.compile("^( [a-z]{3} [.] [a-z]{3}  @ ([a-z]{2} [.] [a-z]{2}) [.][a-z]{2,}$)");
+        Pattern pattern2 = Pattern.compile("^([a-z]{3}[.][a-z]{3}@([a-z]{2}[.][a-z]{2})[.][a-z]{2,}$)");
        // System.out.println("Enter email : ");
-        Matcher matcher2 = pattern.matcher("abc.xyz@bl.co.in");
-        if (matcher.matches())
+        Matcher matcher2 = pattern2.matcher("abc.xyz@bl.co.in");
+        if (matcher2.matches())
             System.out.println("valid email");
         else
             System.out.println("Invalid email");
 
         //uc4
         Pattern pattern3 = Pattern.compile("^(\\+?\\d{1,3})\s\\d{10}$");
-        Matcher matcher3 = pattern.matcher("+91 9822042799");
-        if (matcher.matches())
+        Matcher matcher3 = pattern3.matcher("+91 9822042799");
+        if (matcher3.matches())
             System.out.println("valid phone no");
         else
             System.out.println("Invalid phone no");
@@ -43,10 +43,39 @@ public class UserRegistration {
         //uc5
         //rule1: minimum 8 chracters
         Pattern pattern4 = Pattern.compile("^[A-Za-z]{8,}$");
-        Matcher matcher4 = pattern.matcher("mySecretPassword");
-        if (matcher.matches())
+        Matcher matcher4 = pattern4.matcher("mySecretPassword");
+        if (matcher4.matches())
             System.out.println("valid password_rule1");
         else
             System.out.println("Invalid password)rule1");
+
+        //uc6
+        //rule2: minimum 8 chracters with atleat 1 capital chracter
+        Pattern pattern5 = Pattern.compile("^(?=[a-z]*[A-Z]).{8,}$");
+        Matcher matcher5 = pattern5.matcher("pPassword");
+        if (matcher5.matches())
+            System.out.println("valid password_rule2");
+        else
+            System.out.println("Invalid password)rule2");
+
+        //uc7
+        //rule3: minimum 8 chracters with atleat 1 capital chracter and 1 numeric word
+        Pattern pattern6 = Pattern.compile("^(?=[a-z]*[A-Z])(?=.*[0-9]).{8,}$");
+        Matcher matcher6 = pattern6.matcher("PPPass8word");
+        if (matcher6.matches())
+            System.out.println("valid password_rule3");
+        else
+            System.out.println("Invalid password_rule3");
     }
 }
+
+
+
+
+
+
+
+
+
+
+
