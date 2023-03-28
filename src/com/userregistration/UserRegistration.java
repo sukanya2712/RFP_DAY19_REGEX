@@ -9,8 +9,16 @@ public class UserRegistration {
         Pattern pattern = Pattern.compile("^[A-Z][a-z]{2,}");
         Matcher matcher = pattern.matcher("Sukanya");
         if (matcher.matches())
-            System.out.println("valid");
+            System.out.println("valid firstname");
         else
-            System.out.println("Invalid");
+            System.out.println("Invalid firstname");
+
+        //uc2
+        Pattern pattern1 = Pattern.compile("^[A-Z][a-z]{2,}");
+        Matcher matcher1 = pattern.matcher("Naik");
+        if (matcher.matches())
+            System.out.println("valid lastname");
+        else
+            System.out.println("Invalid lastname");
     }
 }
