@@ -14,3 +14,7 @@ As a User need to enter
 - E.g. abc.xyz@bl.co.in - Email has 3 mandatory parts (abc, bl
 & co) and 2 optional (xyz & in) with
 precise @ and . positions
+
+As a User need to follow pre-defined Mobile Format
+- E.g. 91 9919819801 - Country code follow by space and 10
+digit number

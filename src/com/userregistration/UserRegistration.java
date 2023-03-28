@@ -24,7 +24,7 @@ public class UserRegistration {
             System.out.println("Invalid lastname");
 
         //uc3
-        Pattern pattern2 = Pattern.compile("^( [a-z]{3} [.] [a-z]{3}  @ ([a-z]{2} [.] [a-z]{2}) [.][a-z]{2,})");
+        Pattern pattern2 = Pattern.compile("^( [a-z]{3} [.] [a-z]{3}  @ ([a-z]{2} [.] [a-z]{2}) [.][a-z]{2,}$)");
        // System.out.println("Enter email : ");
         Matcher matcher2 = pattern.matcher("abc.xyz@bl.co.in");
         if (matcher.matches())
@@ -32,7 +32,13 @@ public class UserRegistration {
         else
             System.out.println("Invalid email");
 
-
+        //uc4
+        Pattern pattern3 = Pattern.compile("^(\\+?\\d{1,3})\s\\d{10}$");
+        Matcher matcher3 = pattern.matcher("+91 9822042799");
+        if (matcher.matches())
+            System.out.println("valid phone no");
+        else
+            System.out.println("Invalid phone no");
 
     }
 }
