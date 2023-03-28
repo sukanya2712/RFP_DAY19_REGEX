@@ -36,6 +36,36 @@ Rule3  Should have at least 1 numeric number in the password
 Rule4 Has exactly 1 Special Character
 - NOTE All rules must be passed
 
+//UC9
+Should clear all email samples provided separately
+ 1. abc@yahoo.com,
+ 2. abc-100@yahoo.com,
+ 3. abc.100@yahoo.com
+ 4. abc111@abc.co
+ 5. abc-100@abc.net,
+ 6. abc.100@abc.com.au
+ 7. abc@1.com,
+ 8. abc@gmail.com.com
+ 9. abc+100@gmail.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
